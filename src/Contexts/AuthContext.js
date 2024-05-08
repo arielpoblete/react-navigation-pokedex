@@ -1,7 +1,9 @@
 import React, { useState, createContext } from "react";
 
 export const AuthContext = createContext({
-  user: undefined,
+  auth: undefined,
+  login: () => {},
+  logout: () => {},
 });
 
 export function AuthProvider(props) {

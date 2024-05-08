@@ -27,8 +27,7 @@ export default function LoginForm() {
       if (username !== user.username || password !== user.password) {
         setError("El usuario o la contraseña no son correcto");
       } else {
-        console.log("Login correcto");
-        console.log(userDetails);
+        login(userDetails);
       }
     },
   });
