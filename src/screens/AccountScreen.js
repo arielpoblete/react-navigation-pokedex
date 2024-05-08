@@ -1,9 +1,8 @@
-import { SafeAreaView, Text } from "react-native"
+import { SafeAreaView, Text } from "react-native";
+import LoginForm from "../components/Auth/LoginForm";
+import UserData from "../components/Auth/UserData";
 
 export default function AccountScreen() {
-  return (
-    <SafeAreaView>
-        <Text>Account</Text>
-    </SafeAreaView>
-  );
+  const auth = null;
+  return <SafeAreaView>{auth ? <UserData /> : <LoginForm />}</SafeAreaView>;
 }
